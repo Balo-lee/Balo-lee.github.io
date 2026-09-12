@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Muhibbullah">
+  <meta name="description" content="My Portfolio">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Muhibbullah Balogun | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/favicon-portfolio.png" type="image/png">
+    
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+        
+        <a href="#hero" class="logo">
+            <img src="./img/profile.png" alt="Muhibbullah Balogun">
+            <span>Muhibbullah</span>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-controls="moblie menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    
+    <aside class="mobile-menu" id="mobile-menu">
+        <div class="mobile-header">
+            <a href="#hero" class="logo">
+                <img src="./img/profile.png" alt="Muhibbullah Balogun">
+                <span>Muhibbullah</span>
+            </a>
+            <button class="close-menu" id="close-menu" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <ul class="mobile-links">
+          <li><a href="#hero" class="mobile-link active">Home</a></li>
+          <li><a href="#about" class="mobile-link">About Me</a></li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </aside>
+  </header>
+  
+    <main>
+        <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="status-badge"><span class="status-dot"></span>Open to opportunities</span>
+          <p class="greeting">Hello, I'm</p>
+          <h1>Muhibbullah Balogun</h1>
+          <h2>Aspiring Software Engineer</h2>
+          <p class="hero-text">I build clean, responsive and user-friendly websites using HTML and CSS — and I'm currently sharpening my JavaScript on the way to a Software Engineering degree.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <a href="./cv.pdf" download class="cv-link">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-frame">
+            <img src="./img/profile.png" alt="Muhibbullah Balogun" class="hero-avatar">
+          </div>
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+              <span class="terminal-title">developer.js</span>
+            </div>
+            <pre class="terminal-body"><code id="terminal-code"></code><span class="cursor">&#9608;</span></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+          <span class="scroll-text">Scroll</span>
+          <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+        
+        <!-- ABOUT -->
+        <section id="about" class="reveal">
+          <h2 class="title">About Me</h2>
+          <div class="about-card">
+            <p>I'm Muhibbullah Balogun, an aspiring Software Engineer built through consistent, hands-on practice rather than a classroom. After completing WAEC in 2025 and JAMB in 2026, I applied to the Software Engineering program at the Federal University of Technology, Minna — and while I wait, I keep building. HTML and CSS gave me a way to turn ideas into real, working interfaces; now I'm deepening my JavaScript to make those interfaces do more.</p>
+            <p>I care about writing clean, semantic code and building things that actually work well on any screen — not just look good in a screenshot. Every project on this site was built end-to-end by me, mistakes and all, because that's how I actually learn.</p>
+          </div>
+          <div class="quick-facts">
+            <div class="fact"><i class="fa-solid fa-location-dot"></i><span>Minna, Niger State <small>(from Ekiti State)</small></span></div>
+            <div class="fact"><i class="fa-solid fa-graduation-cap"></i><span>Awaiting Admission — FUT Minna, Software Engineering</span></div>
+            <div class="fact"><i class="fa-solid fa-code"></i><span>Currently Learning: JavaScript</span></div>
+            <div class="fact"><i class="fa-solid fa-language"></i><span>Yoruba, Hausa, English</span></div>
+          </div>
+        </section>
+
+        <!-- APPROACH -->
+        <section class="approach reveal">
+          <h2 class="title">My Approach</h2>
+          <div class="approach-grid">
+            <div class="approach-card reveal-card" data-delay="0">
+              <i class="fa-solid fa-code approach-icon"></i>
+              <h3>Clean &amp; Semantic</h3>
+              <p>I write HTML that means something — not just div soup — so every page is easy to read and maintain.</p>
+            </div>
+            <div class="approach-card reveal-card" data-delay="100">
+              <i class="fa-solid fa-mobile-screen approach-icon"></i>
+              <h3>Mobile-First</h3>
+              <p>Every layout starts on a small screen and grows up, so nothing breaks on the device people actually use.</p>
+            </div>
+            <div class="approach-card reveal-card" data-delay="200">
+              <i class="fa-solid fa-seedling approach-icon"></i>
+              <h3>Always Learning</h3>
+              <p>Every project teaches me something new — I build first, then dig into why it works.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- JOURNEY TIMELINE -->
+        <section id="progress" class="timeline-section reveal">
+          <h2 class="title">My Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h3>Completed Secondary Education</h3>
+                <p>Sat WAEC and began self-teaching HTML &amp; CSS.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 – 2026</span>
+                <h3>Built First Projects</h3>
+                <p>Practiced by building real websites — portfolio pages, school website, and functioning LMS.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2026</span>
+                <h3>Sat JAMB &amp; Applied to FUT Minna</h3>
+                <p>Applied for admission into the Software Engineering program.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Now</span>
+                <h3>Learning JavaScript</h3>
+                <p>Deepening my skills while awaiting admission — currently working through freeCodeCamp's Responsive Web Design certification.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- SKILLS -->
+      <section id="skills" class="reveal">
+          <h2 class="title">My skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card html reveal-card" data-delay="0">
+                <img src="./img/html5.png" alt="HTML Logo">
+                <h3>HTML</h3>
+                <p>Builds the structure and semantic foundation of modern web pages.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 85%;"></div></div>
+                  <span class="proficiency-label">Proficient</span>
+                </div>
+            </div>
+            <div class="skill-card css reveal-card" data-delay="100">
+                <img src="./img/css3.png" alt="CSS Logo">
+                <h3>CSS</h3>
+                <p>Styles webpages with responsive layouts, colors, and animations.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 80%;"></div></div>
+                  <span class="proficiency-label">Confident</span>
+                </div>
+            </div>
+            <div class="skill-card responsive reveal-card" data-delay="200">
+                <img src="./img/responsive.png" alt="Responsive Design">
+                <h3>Responsive Design</h3>
+                <p>Creates websites that adapt beautifully to phones, tablets, and desktops.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 75%;"></div></div>
+                  <span class="proficiency-label">Comfortable</span>
+                </div>
+            </div>
+            <div class="skill-card flex reveal-card" data-delay="300">
+                <img src="./img/flex.png" alt="Flexbox">
+                <h3>Flexbox</h3>
+                <p>Creates flexible one-dimentional layouts and align items efficiently.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 70%;"></div></div>
+                  <span class="proficiency-label">Skilled</span>
+                </div>
+            </div>
+            <div class="skill-card grid reveal-card" data-delay="400">
+                <img src="./img/grid.png" alt="CSS Grid">
+                <h3>CSS Grid</h3>
+                <p>Buids responsive two-dimensional layouts with rows and columns.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 85%;"></div></div>
+                  <span class="proficiency-label">Confident</span>
+                </div>
+            </div>
+            <div class="skill-card problem reveal-card" data-delay="500">
+                <img src="./img/problem.png" alt="Problem Solving">
+                <h3>Problem Solving</h3>
+                <p>Analyzes challenges and develop logical, efficient coding solutions.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 80%;"></div></div>
+                  <span class="proficiency-label">Confident</span>
+                </div>
+            </div>
+            <div class="skill-card javascript reveal-card" data-delay="600">
+                <img src="./img/javascript.png" alt="JavaScript Logo">
+                <h3>JavaScript</h3>
+                <p>Adds interactivity, DOM manipulation, and dynamic behavior to web pages.</p>
+                <div class="proficiency">
+                  <div class="proficiency-bar"><div class="proficiency-fill" style="width: 45%;"></div></div>
+                  <span class="proficiency-label">Learning</span>
+                </div>
+            </div>
+          </div>
+        </section><br>
+        <!-- PROJECTS -->
+        <section id="projects" class="reveal">
+            <h2 class="title">My Projects</h2>
+        <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./img/sch-website.png" alt="School Website project screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>School Website</h3>
+                        <p>A responsive school website featuring multiple pages, forms, tables, and clean navigation.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../school-mini-website.html/index.html" target="_blank" class="btn-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/YOUR-GITHUB-USERNAME/school-mini-website.html" target="_blank" class="btn-link btn-link-outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./img/balolee-books.png" alt="Balo Lee Books project screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Balo Lee Books</h3>
+                        <p>A responsive bookstore website featuring a book catalog layout, clear navigation, and structured content sections.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../Balo-Lee-Books.html/index.html" target="_blank" class="btn-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/YOUR-GITHUB-USERNAME/Balo-Lee-Books.html" target="_blank" class="btn-link btn-link-outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./img/skills.png" alt="Web Skills Guide project screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Skills Guide</h3>
+                        <p>A beginner-friendly skills page showing web languages, a learning path, and tips — built with HTML &amp; CSS only.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../skills.html/index.html" target="_blank" class="btn-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/YOUR-GITHUB-USERNAME/skills.html" target="_blank" class="btn-link btn-link-outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./img/first-html.png" alt="My First HTML and CSS project screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>My First HTML and CSS</h3>
+                        <p>A beginner website built with HTML and CSS fundamentals including styled layout, video and audio.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../first-webpage.html/index.html" target="_blank" class="btn-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/YOUR-GITHUB-USERNAME/first-webpage.html" target="_blank" class="btn-link btn-link-outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+      
+        <hr>
+        <!-- CONTACT -->
+        <section id="contact" class="reveal">
+            <h2 class="title">Contact Information</h2>
+            <div class="contact-info">
+              <p><strong>Email:</strong><a href="mailto:muhibbullahbalo213@gmail.com">muhibbullahbalo213@gmail.com</a></p>
+               <p><strong>Phone:</strong><a href="tel:09020846535">09020846535</a> <span class="comma">,</span> <a href="tel:08055929461">08055929461</a></p><br>
+               </div>
+            <h2 class="h2">Contact Me</h2>
+            <div class="contact-form">
+                <p>Feel free to send me a message, and I'll get back to you as soon as possible.</p>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <div class="input-wrap">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Your full name">
+                        </div>
+                        <span class="error-msg" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-wrap">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <span class="error-msg" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="What would you like to say?" rows="5"></textarea>
+                        <span class="error-msg" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="form-btn" id="form-submit-btn">Send Message</button>
+
+                    <div class="form-success" id="form-success">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Thanks! Your message has been sent — I'll get back to you soon.</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <div class="status-strip">
+        <p><span class="strip-dot"></span> Currently learning JavaScript &nbsp;•&nbsp; Open to internships &nbsp;•&nbsp; Building in public</p>
+    </div>
+      
+        <!-- FOOTER SECTION -->
+     <footer>
+        <div class="footer-grid">
+            <div class="footer-col footer-about">
+                <h2>Muhibbullah Balogun</h2>
+                <p>Aspiring Software Engineer passionate about building clean, responsive websites — currently sharpening my JavaScript on the way to a degree in Software Engineering.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="social-icons">
+                    <li><a class="linkedin primary" aria-label="LinkedIn" href="https://linkedin.com/in/muhibbullah-balogun"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a class="github primary" aria-label="GitHub" href="https://github.com/YOUR-GITHUB-USERNAME"><i class="fab fa-github"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="whatsapp" aria-label="WhatsApp" href="https://wa.me/234XXXXXXXXXX"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a class="facebook" aria-label="Facebook" href="https://facebook.com/YOUR-FACEBOOK-USERNAME"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <p class="copyright">&copy; 2026 Muhibbullah Balogun. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+<button class="back-to-top" id="back-to-top" aria-lab="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+    
+</body>
+
+</html>
