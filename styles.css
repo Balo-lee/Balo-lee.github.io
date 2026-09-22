@@ -1192,6 +1192,13 @@ grid-template-columns:repeat(auto-fit,minmax(320px, 1fr));
     color: var(--primary);
     margin-bottom: 15px;
 }
+
+.project-credit {
+    font-size: .82rem;
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: -8px;
+}
 .project-tags{
     display:flex;
     flex-wrap:wrap;
