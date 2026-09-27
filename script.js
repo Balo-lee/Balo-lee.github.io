@@ -306,13 +306,33 @@ if (contactForm) {
 
         if (!isValid) return;
 
-        // Placeholder success — will be replaced once backend is connected
-        formSuccess.classList.add("show");
-        contactForm.reset();
+        const submitBtn = document.getElementById("form-submit-btn");
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
 
-        setTimeout(() => {
-            formSuccess.classList.remove("show");
-        }, 5000);
+        fetch("https://formspree.io/f/mvkgweqk", {
+            method: "POST",
+            body: new FormData(contactForm),
+            headers: { "Accept": "application/json" }
+        })
+        .then((response) => {
+            if (response.ok) {
+                formSuccess.classList.add("show");
+                contactForm.reset();
+                setTimeout(() => {
+                    formSuccess.classList.remove("show");
+                }, 5000);
+            } else {
+                alert("Something went wrong. Please try again or email me directly.");
+            }
+        })
+        .catch(() => {
+            alert("Network error. Please check your connection and try again.");
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+        });
     });
 
     // Clear error as user types
